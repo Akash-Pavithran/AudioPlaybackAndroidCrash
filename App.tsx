@@ -9,6 +9,7 @@ import React from 'react';
 import {Button, SafeAreaView, Text} from 'react-native';
 import {AudioManager, StreamState} from 'react-native-audio-playback';
 
+// Both of these audios works fine in iOS but audios.SIX_HIT crashes android
 const audios = {
   MAIN_MENU_BGM: require('./assets/sounds/mainMenu_bgm_44100_2.mp3'),
   SIX_HIT: require('./assets/sounds/six_hit_ball_sound.mp3'), // <--- Loading this audio crashes android
